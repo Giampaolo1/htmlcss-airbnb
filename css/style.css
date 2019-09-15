@@ -1,24 +1,31 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
 .barralato {
   width: 30%;
   height: 500px;
-  background: grey;
+  background: lightgrey;
 }
 
 .bottone {
-  width: 150px;
+  width: 50%;
   height: 150px;
+  display: inline-block;
   position: relative;
-  left: 100px;
+  left: 70px;
 }
 
 .bottone.roma {
-  background: red;
-}
-
-.bottone.milano {
-  background: green;
+  background-image: url(https://img2.meteo.it/bin/90.$plit/C_109_meteoCitta_4_upiFoto.jpg);
 }
 
 .bottone.firenze {
-  background: yellow;
+  background-image: url(https://www.1900artevita.com/wp-content/uploads/2019/04/bed-breakfast-firenze-11-1.jpg);
+}
+
+.bottone.milano {
+  background-image: url(https://cdn.getyourguide.com/img/tour_img-1240626-146.jpg);
 }
