@@ -4,28 +4,53 @@
   box-sizing: border-box;
 }
 
-.barralato {
+.container {
   width: 30%;
-  height: 500px;
-  background: lightgrey;
+  height: 100vh;
+  background-color: lightblue;
 }
 
-.bottone {
+.box {
   width: 50%;
   height: 150px;
   display: inline-block;
   position: relative;
   left: 70px;
+  background-size: cover;
+  border: 2px solid black;
+  cursor: pointer;
 }
 
-.bottone.roma {
+.box:hover .opaco {
+ background-color: rgba(0, 0, 0, 0);
+}
+
+.roma {
   background-image: url(https://img2.meteo.it/bin/90.$plit/C_109_meteoCitta_4_upiFoto.jpg);
 }
 
-.bottone.firenze {
-  background-image: url(https://www.1900artevita.com/wp-content/uploads/2019/04/bed-breakfast-firenze-11-1.jpg);
+.firenze {
+  background-image: url(https://images.musement.com/cover/0002/39/top-cityscape-view-on-the-dome-of-santa-maria-del-fiori-florence-jpg_header-138319.jpeg?&q=60&fit=crop&lossless=true&auto=format&w=412&h=250);
 }
 
-.bottone.milano {
-  background-image: url(https://cdn.getyourguide.com/img/tour_img-1240626-146.jpg);
+.milano {
+  background-image: url(https://upload.wikimedia.org/wikipedia/commons/thumb/7/73/Milano_corso_Vitt_Eman_5.JPG/220px-Milano_corso_Vitt_Eman_5.JPG);
 }
+
+.nome {
+  color: white;
+  font-size: 20px;
+  position: absolute;
+  left: 50%;
+  top:50%;
+  transform: translate(-50%, -50%);
+}
+
+.opaco {
+  background-color: rgba(0, 0, 0, 0.5);
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  }
